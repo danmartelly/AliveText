@@ -1,0 +1,14 @@
+{
+  "name": "AliveText",
+  "description":"Edits text on webpages in realtime time to enhance readability and comprehension.",
+  "version": "1.0",
+  "manifest_version":2,
+  "content_scripts": [
+    {
+      "matches": ["http://www.google.com/*"],
+      "css": ["mystyles.css"],
+      "js": ["jquery.js", "myscript.js"]
+    }
+  ],
+  
+}
