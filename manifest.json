@@ -5,9 +5,8 @@
   "manifest_version":2,
   "content_scripts": [
     {
-      "matches": ["http://www.google.com/*"],
-      "css": ["mystyles.css"],
-      "js": ["jquery.js", "myscript.js"]
+      "matches": ["http://*/*"],   //what URLs to match, we want to match all
+      "js": ["script.js"]       // our JS code, inserted at end of document
     }
   ],
   
