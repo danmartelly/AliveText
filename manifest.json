@@ -5,9 +5,9 @@
   "manifest_version":2,
   "content_scripts": [
     {
-      "matches": ["http://*/*"],   //what URLs to match, we want to match all
-      "js": ["script.js"]       // our JS code, inserted at end of document
+      "matches": ["file:///Users/colinmcd94/Documents/Programs/Testing/test.html","http://*/*","https://*/*"],
+      "js":["jquery-2.0.3.min.js","jspos/lexer.js","jspos/lexicon.js_","jspos/POSTagger.js","script.js"]
     }
   ],
-  
+  "web_accessible_resources":["jquery-2.0.3.min.map","jquery-2.0.3.min.js"]
 }
